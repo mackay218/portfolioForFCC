@@ -1,0 +1,171 @@
+/* menu button */
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    background-color: #fff;
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: #fff;
+}
+/* menu show */
+.active{
+  width: 25vw;
+  transition: 0.5s;
+}
+/******************/
+
+/* greeting */
+ /*blinking cursor*/
+@keyframes blink {
+                   0% {opacity: 1;}
+                   50% {opacity: 0;}
+                   100% {opacity: 1;}
+                 }
+.typed-cursor {
+        opacity: 1;
+        animation: blink 1s infinite;
+    }
+/*******************/
+#hero{
+  -webkit-transfrom-style: preserve 3d;
+  -webkit-perspective: 400px;
+  perspective: 400px;
+}
+
+/* logo */
+@keyframes glow{
+  from, to {}
+  0%, 25% { -webkit-text-stroke: 5px rgba(255,255,255,0.2);}
+  25%, 26% { -webkit-text-stroke: 1px rgba(255,255,255,0.5);}
+  26%, 35% { -webkit-text-stroke: 8px rgba(255,255,255,0.2);}
+  35%, 65% { -webkit-text-stroke: 10px rgba(255,255,255,0.2);}
+  65%, 66% { -webkit-text-stroke: 8px rgba(255,255,255,0.2);}
+  66%, 67% { -webkit-text-stroke: 1px rgba(255,255,255,0.5);}
+  68%, 80% { -webkit-text-stroke: 10px rgba(255,255,255,0.2);}
+  80%, 90% { -webkit-text-stroke: 8px rgba(255,255,255,0.2);}
+  90%, 91% {-webkit-text-stroke: 10px rgba(255,255,255,0.2);}
+  91%, 92% { -webkit-text-stroke: 5px rgba(255,255,255,0.2);}
+  92%, 93% { -webkit-text-stroke: 8px rgba(255,255,255,0.2);}
+  93%, 100% { -webkit-text-stroke: 5px rgba(255,255,255,0.2);}
+}
+@keyframes glow2{
+  from{
+    color: rgba(255,255,255,0.05);
+    text-shadow: 0px -6px 10px rgba(255,255,255,0.1);
+  }
+  to{
+    color: rgba(255,255,255,0.1);
+    text-shadow: 0px -6px 10px rgba(255,255,255,0.2);
+  }
+}
+
+.icon-dmLogo{ animation: glow 10s linear infinite alternate; }
+.icon-dmLogo5px{ animation: glow 10s linear infinite alternate; }
+.icon-dmLogo{ animation: glow2 10s linear infinite alternate; }
+/*down arrow button*/
+
+@keyframes sink{
+  from {
+      height: 50px;
+      width: 50px;
+      color: rgba(255,255,255,0.4);
+      position: absolute;
+      top: 0px;
+      }
+  to {
+      height:60px;
+      width: 60px;
+      color: rgba(255,255,255,1);
+      transform: translateY(35%);
+      -webkit-transform: translateY(35%);
+    }
+}
+  #arrow:hover {
+    animation: sink 2s linear infinite alternate;
+  }
+
+/* head animations */
+.head{
+  opacity: 0;
+}
+.headBehind{
+  opacity: 0;
+}
+.opaque{
+  opacity: 1;
+}
+.head-open{
+  -webkit-transition-duration: 1s ;
+  transition-duration: 1s;
+  -webkit-transform: rotateY(110deg);
+  transform: rotateY(110deg);
+  -webkit-tranform-origin: 100% 50%;
+  transform-origin: 252px 0 25px;
+
+}
+
+@supports(-ms-ime-align: auto){
+  .head-open{
+    opacity: 0;
+  }
+}
+
+.headBack-open{
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-tranform: rotateY(110deg);
+  transform: rotateY(110deg);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 250px 0 25px;
+}
+
+@keyframes shrink{
+  from{
+    height: 50px;
+    width: 40px;
+    font-size: 70px;
+
+  }
+  to{
+    height: 10px;
+    width: 8px;
+    font-size: 0px;
+  }
+}
+
+.a{
+  animation: shrink 7s linear infinite alternate;
+}
+.b{
+  animation: shrink 5s linear infinite alternate;
+}
+.c{
+  animation: shrink 9s linear infinite alternate;
+}
+.d{
+  animation: shrink 5s linear infinite alternate;
+}
+.e{
+  animation: shrink 7s linear infinite alternate;
+}
+.f{
+  animation: shrink 10s linear infinite alternate;
+}
+.g{
+  animation: shrink 4s linear infinite alternate;
+}
+.h{
+    animation: shrink 10s linear infinite alternate;
+  }
+.i{
+  animation: shrink 6s linear infinite alternate;
+}
+.j{
+  animation: shrink 10s linear infinite alternate;
+}
+/*************************************************/
